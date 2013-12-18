@@ -1,10 +1,16 @@
 Project::Application.configure do
-  # Settings specified here will take precedence over those in config/application.rb
+  
+# Settings specified here will take precedence over those in config/application.rb
 
-  # Code is not reloaded between requests
+  
+# Code is not reloaded between requests
   config.cache_classes = true
 
-  # Full error reports are disabled and caching is turned on
+  
+# Force all access to the app over SSL, use Strict-Transport-Security,
+  # and use secure cookies.
+  config.force_ssl = true
+# Full error reports are disabled and caching is turned on
   config.consider_all_requests_local       = false
   config.action_controller.perform_caching = true
 
